@@ -16,6 +16,7 @@ header{
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 2;
 }
 header a{
     text-decoration: none;
@@ -113,6 +114,7 @@ div.right{
     margin-top: 120px;
     display: flex;
     flex-direction: column;
+    margin-left: -25px;
 }
 div.right h1{
     font-size: 40px;
@@ -153,6 +155,7 @@ p span{
 .svg{
     position: relative;
     top: -120px;
+    z-index: -2;
 }
 div.ads{
     display: flex;
@@ -161,7 +164,7 @@ div.ads{
 }
 .heading2{
     text-align: center;
-    margin-top: -80px;
+    margin-top: -50px;
     margin-bottom: 25px;
     color: rgb(234,0,2);
     font-size: 1.8rem;
@@ -182,6 +185,82 @@ div p{
 }
 div.ads2{
     display: flex;
-    justify-content: space-around;
+    flex-direction: row-reverse;
+    justify-content: center;
     flex-wrap: wrap;
+    margin-top: 50px;
+    align-items: center;
+}
+div.ads2 p{
+    background-color: rgba(65, 64, 64, 0.418);
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 7px 7px 7px rgba(65, 64, 64, 0.678);
+}
+div.ads2 p:first-of-type{
+    margin-left: 50px;
+}
+div.cars{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background-color: rgba(65, 64, 64, 0.751);
+    width: 95%;
+    margin-left: 30px;
+    padding: 60px 20px;
+    border-radius: 20px;
+    z-index: -6;
+}
+div.cars div{
+    background-color:  rgba(17, 18, 18, 0.628);
+    padding: 15px 10px;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.674);
+}
+div.carssec p:first-of-type{
+    color: rgb(247, 211, 211);
+}
+.carsimg{
+    height: 200px;
+}
+div.carssec p:nth-of-type(2){
+    color: rgba(255, 255, 255, 0.724);
+}
+div.carssec p:nth-of-type(3){
+    color: rgba(255, 255, 255, 0.724);
+}
+div.carssec p:nth-of-type(4){
+    color: rgba(255, 255, 255, 0.724);
+}
+.available{
+    position: relative;
+    top: 180px;
+    left: 90px;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.667);
+    width: fit-content;
+    z-index: 0;
+}
+.dropdown-content{
+    display: none;
+}
+.dropdown:hover .dropdown-content{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 10px;
+    background-color: blueviolet;
+    position: relative;
+}
+button{
+    background-color: red;
+    margin-top: 4px;
 }
