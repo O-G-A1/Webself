@@ -206,13 +206,11 @@ div.cars{
     flex-wrap: wrap;
     margin-top: 100px;
     justify-content: space-evenly;
-    align-items: flex-start;
     background-color: rgba(65, 64, 64, 0.751);
-    width: 95%;
-    margin-left: 30px;
+    width: 100%;
     padding: 60px 20px;
-    border-radius: 20px;
-    z-index: -6;
+    z-index: -2;
+    box-shadow: 5px 10px 5px rgba(41, 44, 44, 0.432);
 }
 div.cars div{
     background-color:  rgba(17, 18, 18, 0.628);
@@ -252,14 +250,13 @@ div.carssec p:nth-of-type(4){
 div.forms{
     display: flex;
     justify-content: space-evenly;
-    background-color: rgba(234, 0, 4, 0.308);
+    background-color:  rgba(41, 44, 44, 0.432);
     /* background-image: url(../images/Screenshot_24-5-2024_114749_www.instagram.com.jpeg); */
     /* background-blend-mode:color-burn; */
     /* background-repeat: no-repeat; */
     /* background-size: cover; */
-    border-radius: 20px;
-    margin: 100px auto;
-    width: 90vw;
+    margin-top: 10px;
+    width: 100%;
     padding: 80px;
 }
 div.formright, div.formleft{
@@ -294,14 +291,14 @@ form > img{
 }
 .signupsec{
     position: relative;
-    top: 160px;
+    top: 80px;
     left: 350px;
     width: fit-content;
-    color: rgb(65,64,64);
+    color: white;
 }
 div input:last-of-type{
     color: rgb(65,64,64);
-    background-color: rgb(234,0,2);
+    background-color: rgba(234, 0, 4, 0.607);
     border: none;
     padding: 7px 10px;
     border-radius: 5px;
@@ -310,10 +307,11 @@ div input:last-of-type{
     box-shadow: 2px 2px 2px rgb(65,64,64);
 }
 div input:last-of-type:hover{
-    background-color:  rgba(234, 0, 4, 0.516);
+    background-color: rgb(17, 18, 18);
+    color: white;
 }
 .form, .signup{
-    color: rgb(234,0,2);
+    color: rgb(17, 18, 18);
 }
 .tyre{
     position: relative;
@@ -332,4 +330,64 @@ div input:last-of-type:hover{
     98%{
         top: 500px;
     }
+}
+.aboutcontent{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+    background-color: rgba(65, 64, 64, 0.61);
+    justify-content: space-evenly;
+    margin-top: 100px;
+    border-radius: 30px;
+    box-shadow: 2px 5px 2px rgba(255, 255, 255, 0.269);
+}
+div.abtcntnt1{
+    display: flex;
+    justify-content: space-evenly;
+}
+div.abtcntnt1 a{
+    margin-left: 30px;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+div.abtcntnt1 img{
+    margin-top: 40px;
+    margin-right: 100px;
+}
+div.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(17, 18, 18);
+    padding: 30px 0px;
+}
+div.abtcntnt2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 320px;
+}
+#callus{
+    margin-left: 15px;
+    text-decoration: none;
+    color: black;
+    border-bottom: none;
+}
+.developed{
+    position: relative;
+    top: -370px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 20px;
+    height: 180px;
+    width: 30%;
+}
+.developed img{
+    border-radius: 5px;
 }
